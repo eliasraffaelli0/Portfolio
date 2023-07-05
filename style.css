@@ -1,0 +1,208 @@
+.container, .container2 {
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: #f2f2f2;
+    border-radius: 25px;
+
+    transition: color 0.2s ease;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.container2 {
+    grid-template-columns: 40% 60%;
+}
+.container:hover, .container2:hover {
+    background-color: #191919;
+    color: white;
+    cursor: pointer;
+}
+
+.photo-sqr {
+    width: 100%; 
+    height: auto;
+}
+
+.photo {
+    width: 100%;
+    height: 578px;
+    display: block;
+    border-radius: 25px;
+
+}
+
+.second-photo {
+    width: 100%;
+    height: 578px;
+    display: block;
+    border-radius: 25px;
+}
+
+.photo-content {
+    display: block;
+}
+
+.second-photo-content {
+    display: none;
+}
+
+.container:hover> .photo-sqr > .second-photo-content {
+    display: block;
+}
+
+.container:hover > .photo-sqr > .photo-content {
+    display: none;
+}
+
+.container2:hover> .photo-sqr > .second-photo-content {
+    display: block;
+}
+
+.container2:hover > .photo-sqr > .photo-content {
+    display: none;
+}
+
+.wrapper{
+    text-align: center;
+}
+
+.nav-item{
+    margin-top: 15px;
+    display: inline-block; 
+    vertical-align: top;
+}
+
+.nav-item a{
+    border-radius: 4px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    background-color: #191919;
+}
+
+.nav-item a:hover{
+    background-color: #f02494;
+}
+
+.active{
+    background-color: #f2f2f2 !important;
+    color: black !important;
+}
+
+.img-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: Roboto Mono;
+    margin-bottom: 5%;
+
+    transition: color 0.6s ease;
+    transition-property: color;
+    transition-duration: 0.6s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.mini-description {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Roboto Mono;
+
+    transition: color 0.6s ease;
+    transition-property: color;
+    transition-duration: 0.6s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.project-links {
+    margin-top: auto;
+    width: 30%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1%;
+
+    transition: color 0.4s ease;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.container:hover > .img-info > .project-links {
+    background-color: #3b3b3b;
+}
+
+.container2:hover > .img-info > .project-links {
+    background-color: #3b3b3b;
+}
+
+.project-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github-logo:hover {
+    background-color: #494949 !important;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 1px #494949;
+}
+
+.play-logo:hover {
+    background-color: #494949 !important;
+    border-radius: 15px;
+    box-shadow: 0 0 1px 1px #494949;
+}
+
+.project-links a img {
+    height: 70px;
+    width: 70px;
+}
+
+.about-me{
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    display: grid;
+    /* grid-template-columns: 60% 40%; */
+    background-color: #f2f2f2;
+    border-radius: 25px;
+
+    transition: color 0.2s ease;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.about-me:hover {
+    background-color: #191919;
+    color: white;
+    /* cursor: pointer; */
+}
+
+/* .about-me:hover > .img-info > .project-links {
+    background-color: #3b3b3b;
+} */
+
+.about-me-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
